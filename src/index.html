@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="angulartest">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angulartest Application</title>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="AppController">
+  <div class="container">
+    <h1>Customers</h1>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">&nbsp;</div>
+      <div class="panel-body">
+        <table class="table">
+          <tr>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>phone</th>
+            <th>email</th>
+          </tr>
+          <tr ng-repeat="c in clients">
+            <td>{{c.first_name}}</td>
+            <td>{{c.last_name}}</td>
+            <td>{{c.phone}}</td>
+            <td>{{c.email}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
