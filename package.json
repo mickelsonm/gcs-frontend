@@ -5,7 +5,8 @@
   "description": "This is just a toy application.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/mickelsonm/gcs-frontend/issues"
   },
-  "homepage": "https://github.com/mickelsonm/gcs-frontend"
+  "homepage": "https://github.com/mickelsonm/gcs-frontend",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
